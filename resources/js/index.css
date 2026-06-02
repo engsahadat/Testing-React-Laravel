@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 42%, #f8fafc 100%);
+    color: #0f172a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo,
+.bestS {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.icon {
+    width: 20px;
+    height: 100%;
+}
+
+
+#root {
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.border-1 {
+    border-width: 1px;
+}
+
+.border-b-1 {
+    border-bottom-width: 1px;
+}
+
+.grid-rows-fr {
+    grid-template-rows: minmax(0, 1fr);
+}
+
+.slick-slider {
+    position: relative;
+}
+
+.slick-slide > div {
+    outline: none;
+}
+
+.slick-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-prev,
+.slick-next {
+    width: 3rem;
+    height: 3rem;
+    z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 2.5rem;
+    line-height: 1;
+    color: rgba(15, 23, 42, 0.9);
+    opacity: 1;
+}
+
+.slick-prev {
+    left: 1rem;
+}
+
+.slick-next {
+    right: 1rem;
+}
+
+.slick-dots {
+    bottom: -2rem;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #cbd5e1;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #0f172a;
+}
+
+/* Width */
+.scroll-container::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 0; /* Thinner width for vertical scrollbar */
+    height: 0.15rem; /* Thinner height for horizontal scrollbar */
+}
+
+/* Track */
+.scroll-container::-webkit-scrollbar-track, body::-webkit-scrollbar {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+/* Handle */
+.scroll-container::-webkit-scrollbar-thumb , body::-webkit-scrollbar{
+    background: rgb(226, 226, 226);
+    border-radius: 4px; 
+}
+
+/* Handle on hover */
+.scroll-container::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar {
+    background: #777777;
+}

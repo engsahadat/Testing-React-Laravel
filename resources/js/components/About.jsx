@@ -1,0 +1,66 @@
+import React from "react";
+
+const About = () => {
+    return (
+        <div className="max-w-6xl mx-auto mt-12 px-4 md:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div className="md:col-span-7">
+                    <h1 className="text-3xl font-semibold mb-4">About Us</h1>
+                    <div className="space-y-4 text-gray-700 leading-relaxed max-w-prose text-justify">
+                        <p>
+                            Welcome to ShoeVista, your ultimate online destination for an
+                            extensive range of high-quality footwear tailored to meet the
+                            needs of the entire family. Located in the vibrant city of
+                            Gurgaon, Haryana, we are proud to offer a curated selection of
+                            shoes from some of the most renowned brands in the industry,
+                            including Adidas, Puma, and Skechers. Our store is designed to
+                            provide a seamless shopping experience with a diverse array of
+                            options for men, women, and kids.
+                        </p>
+
+                        <p>
+                            At ShoeVista, we understand that comfort and style go hand in
+                            hand. That's why our collection features everything from
+                            high-performance running shoes to versatile walking sneakers.
+                            Whether you’re gearing up for a marathon, enjoying a casual
+                            stroll, or simply seeking everyday comfort, our range includes
+                            something for every occasion and preference. Our assortment of
+                            men’s shoes combines rugged durability with modern design,
+                            while our women’s collection offers both elegance and
+                            practicality. For the little ones, we have a variety of fun
+                            and functional options that ensure they step out in style.
+                        </p>
+
+                        <p>
+                            Shopping with us means you have access to the latest trends and
+                            innovations in footwear, all from the comfort of your home. Our
+                            user-friendly online platform allows you to easily navigate
+                            through categories, find detailed product information, and
+                            enjoy special promotions. With our commitment to exceptional
+                            customer service and fast, reliable delivery across India, you
+                            can trust us to deliver your chosen pair right to your doorstep
+                            swiftly and securely.
+                        </p>
+                    </div>
+                </div>
+
+                <aside className="md:col-span-5">
+                    <div className="h-full bg-gradient-to-br from-gray-50 to-white border rounded-lg p-6 shadow-sm flex flex-col justify-between">
+                        <div className="h-48 overflow-hidden rounded-md mb-4">
+                            <img src="/assets/pic1.jpg" alt="ShoeVista storefront" className="w-full h-full object-cover" />
+                        </div>
+                        <div>
+                            <h2 className="text-lg font-medium mb-2">Our Mission</h2>
+                            <p className="text-gray-600">
+                                Deliver quality footwear with great value, outstanding
+                                customer service, and fast delivery across India.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    );
+};
+
+export default About;
